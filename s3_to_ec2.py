@@ -8,7 +8,7 @@ def s3_to_ec2(remote_fname, local_fname, bucket_name="raw-alpenglow/data/"):
     remote_fname = args.remote_fname
     local_fname = args.local_fname
     bucket_name = args.bucket_name
-        """
+    """
     Download a file from S3 to our local file-system
     """
     if not os.path.exists(local_fname):
