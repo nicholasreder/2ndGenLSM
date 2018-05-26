@@ -1,4 +1,6 @@
 import argparse
+import os
+import boto3
 def s3_to_ec2(remote_fname, local_fname, bucket_name="raw-alpenglow/data/"):
     parser = argparse.ArgumentParser()
     parser.add_argument("remote_fname", help = 'filename on s3')
