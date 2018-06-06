@@ -6,7 +6,7 @@ for i in range(0, 50991):
 
 if not os.path.exists(fname_topro):
   s3 = boto3.resource('s3')
-  b = s3.Bucket("raw-alpenglow/data/17-119_n2")
+  b = s3.Bucket("raw-alpenglow/data/17-119_n2/")
   b.download_file(fname_topro, fname_topro)
 
 for i in range(0, 50991):
@@ -14,5 +14,5 @@ for i in range(0, 50991):
 
 if not os.path.exists(fname_topro):
   s3 = boto3.resource('s3')
-  b = s3.Bucket("raw-alpenglow/data/17-119_n2")
+  b = s3.Bucket("raw-alpenglow/data/17-119_n2/")
   b.download_file(fname_topro, fname_topro)
