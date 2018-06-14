@@ -70,7 +70,7 @@ def main():
 
     pool = mp.Pool(processes = 8)
     func_p = partial(false_color_images, path, files1, files2)
-    img_temp = pool.map(func_p, (z for z in xrange(0, len(files1))))
+    img_temp = pool.map(func_p, (z for z in range(0, len(files1))))
 
     stop = timeit.default_timer()
     print('Total time: {0}s'.format(stop-start))
